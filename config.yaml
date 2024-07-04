@@ -16,13 +16,13 @@ prisoners_dilemma:
     loss: 0
   players:
     - appeaser
-    - tit_for_tat
+    - better_and_better
+    - grudger
     - jesus
     - joker
     - judas
     - lucifer
-    - grudger
-    - better_and_better
+    - tit_for_tat
     - worse_and_worse
 
 # Settings to be used for sokoban solver game.

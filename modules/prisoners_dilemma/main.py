@@ -113,7 +113,7 @@ class ResearchController:
 
         Args:
             round_id (int): The round id for this entry.
-            fixture_id (int): The fixture if for this entry.
+            fixture_id (int): The fixture id for this entry.
             player1 (str): The player 1 of this fixture.
             player2 (str): The player 2 of this fixture.
         Returns:
@@ -126,7 +126,7 @@ class ResearchController:
                 "fixture_id": fixture_id,
                 "player1": player1,
                 "player2": player2,
-                "moves_data": self.game_history,
+                "move_wise_data": self.game_history,
             }
         )
         return None
@@ -188,8 +188,11 @@ class ResearchController:
                     # Append the moves into history of this game.
                     self.game_history.append(
                         {
-                            player1_controller.name: player1_move,
-                            player2_controller.name: player2_move,
+                            "move_number": i,
+                            "player1_move": player1_move,
+                            "player2_move": player2_move,
+                            "player1_score": self.scoreboard[player1_controller.name],
+                            "player2_score": self.scoreboard[player2_controller.name],
                         }
                     )
 
