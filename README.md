@@ -1,10 +1,11 @@
 # Aristotle
 
-The colosseum project is a place where I try to automate my research code base and create a plugin based ecosystem to run research pipelines.
+The arsitotle is a project where I conduct practical research.
 
-The code has been designed to integrate with other research 0projects provided they follow a basic naming convention.
+The code has been written such that each research project can be integrated into the mainline code base using plugin registration.
+Only requirement is that the programmers follow a basic naming convention.
 
-The architecture is simple with the following folder.
+The program layout is simple with the following folder.
 
 1. modules
 2. views
@@ -47,3 +48,4 @@ pip3 install -r requirements.txt
 
 This is a solevr for sokoban puzzles.
 It is an initiative to further the research in artificial intelligence to plan future moves with heuristics without bruteforcing.
+This module is under progress.
