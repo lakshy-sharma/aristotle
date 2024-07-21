@@ -49,3 +49,7 @@ pip3 install -r requirements.txt
 This is a solevr for sokoban puzzles.
 It is an initiative to further the research in artificial intelligence to plan future moves with heuristics without bruteforcing.
 This module is under progress.
+
+## Future Plans
+
+1. Create an Nbody simulator.
